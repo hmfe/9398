@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CSS Wizardry</title>
+    </head>
+    <style>
+        button {
+            padding: 6px;
+            height: 40px;
+            font-weight: bold;
+            background-color: #f3a64f;
+            vertical-align: middle;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        button::after {
+            content: "\02716";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #f3a64f;
+            margin-left: 5px;
+        }
+
+        button:hover::after {
+            background-color: #fff;
+        }
+    </style>
+
+    <body>
+        <button>Delete</button>
+    </body>
+
+</html>

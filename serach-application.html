@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search Application</title>
+    <link rel="stylesheet" href="css/serach application.css">
+</head>
+
+<body>
+    <template id="auto-complete-template">
+        <div class="auto-complete-items-container">
+            <div class="auto-complete-items"></div>
+        </div>
+    </template>
+    <template id="search-history-template">
+        <div class="search-history-items-container border-bottom">
+            <span class="history-items"></span>
+            <div class="clear-history-container">
+                <span class="date-time"></span>
+                <span class="close-button"></span>
+            </div>
+        </div>
+    </template>
+    <form>
+        <div class="search-container">
+            <input id="search" type="text" aria-label="search">
+            <span id="clear-search" class="close-button"></span>
+        </div>
+        <!-- will contain auto-complete items -->
+        <div class="auto-complete-container"></div>
+        <!-- will contain search history items -->
+        <div class="search-history-container">
+            <div class="clear-all-history-container border-bottom">
+                <span>Search history</span>
+                <span id="clear-all" class="clear-all-history">Clear search history</span>
+            </div>
+            <div class="search-history-list-container">
+            </div>
+        </div>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
