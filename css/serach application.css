@@ -1,0 +1,93 @@
+ html,
+ body {
+     background-color: #f5f5f5;
+ }
+ 
+ form {
+     width: 80%;
+     margin: auto;
+     min-width: 500px;
+ }
+ 
+ .search-container input {
+     padding: 15px;
+     width: 80%;
+ }
+ 
+ form .close-button {
+     position: relative;
+     right: 25px;
+     cursor: pointer;
+ }
+ 
+ form .close-button::after {
+     content: "\02716";
+     color: #b7b1b1;
+ }
+ 
+ form .close-button:hover::after {
+     background-color: #ffffff;
+ }
+ 
+ .auto-complete-container,
+ .search-history-container {
+     width: 80%;
+     max-height: 200px;
+     overflow: auto;
+     margin-top: 10px;
+     padding: 15px;
+ }
+ 
+ .auto-complete-container {
+     border: 1px solid #b7b1b1;
+ }
+ 
+ .auto-complete-items-container,
+ .search-history-items-container {
+     height: 35px;
+     padding-right: 10px;
+     cursor: pointer;
+ }
+ 
+ .auto-complete-container {
+     background-color: #ffffff;
+ }
+ 
+ .auto-complete-container:empty,
+ .search-history-container:empty {
+     display: none;
+ }
+ 
+ .search-history-container .clear-history-container {
+     width: 40%;
+     float: right;
+     text-align: right;
+ }
+ 
+ .search-history-container .clear-history-container .close-button {
+     right: -18px;
+ }
+ 
+ .search-history-container .clear-all-history-container {
+     font-weight: bold;
+     margin-bottom: 10px;
+     padding-bottom: 10px;
+ }
+ 
+ .search-history-container .clear-all-history-container .clear-all-history {
+     float: right;
+     cursor: pointer;
+     text-decoration: underline;
+ }
+ 
+ .search-history-list-container .search-history-items-container {
+     margin: 10px 0;
+ }
+ 
+ form .border-bottom {
+     border-bottom: 1px solid #b7b1b1;
+ }
+ 
+ form .date-time {
+     color: #b7b1b1;
+ }
